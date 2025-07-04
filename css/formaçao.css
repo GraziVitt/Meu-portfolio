@@ -1,0 +1,134 @@
+/* Estilos para Formação */
+.education-section {
+    margin: 50px 0;
+}
+
+.education-section h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--cor-primaria);
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 100%;
+    width: 2px;
+    background: var(--cor-destaque);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-date {
+    width: 100px;
+    text-align: right;
+    padding-right: 20px;
+    color: var(--cor-secundaria);
+    font-weight: 500;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-left: 30px;
+    position: relative;
+}
+
+.timeline-content:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--cor-destaque);
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px var(--cor-destaque);
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+}
+
+.institution {
+    color: var(--cor-secundaria);
+    font-style: italic;
+    margin: 5px 0 10px;
+}
+
+/* Seção de Idiomas */
+.languages-section {
+    margin-top: 60px;
+}
+
+.languages-section h3 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: var(--cor-primaria);
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.language-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.language-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    flex: 1;
+    min-width: 250px;
+}
+
+.language-card h4 {
+    margin-top: 0;
+    color: var(--cor-primaria);
+}
+
+.progress-bar {
+    height: 8px;
+    background: #eee;
+    border-radius: 4px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: var(--cor-destaque);
+    border-radius: 4px;
+    transition: width 0.5s ease;
+}
+
+@media (max-width: 600px) {
+    .timeline:before {
+        left: 30px;
+    }
+    
+    .timeline-date {
+        width: 70px;
+        font-size: 0.9rem;
+    }
+}

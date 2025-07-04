@@ -1,0 +1,108 @@
+:root {
+  --verde-menta: #7d8f69;
+  --rosa-queimado: #b392ac;
+  --bege-claro: #f4e1d2;
+  --fundo: #fffdf9;
+  --texto: #3a3a3a;
+  --card-fundo: #f9f6f2;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--fundo);
+  color: var(--texto);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background: var(--bege-claro);
+  padding: 20px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  color: var(--verde-menta);
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--rosa-queimado);
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background: var(--bege-claro);
+  color: var(--texto);
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card-fundo);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  padding: 20px;
+}
+
+.card h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--verde-menta);
+}
+
+form label {
+  font-weight: 600;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+form button {
+  background: var(--rosa-queimado);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: var(--verde-menta);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background: var(--bege-claro);
+}
