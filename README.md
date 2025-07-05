@@ -23,3 +23,5 @@ Tecnologias Usadas:
 -GitHub Pages: publicação do site online.
 -JavaScript: para o carrossel interativo.
 
+Publicado em:https://portflio-grazielle.netlify.app/
+
