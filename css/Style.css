@@ -112,7 +112,7 @@ footer {
   text-align: center;
   padding: 10px;
 }
-
+/* Estilos para os hobbies com efeito hover */
 .hobbies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -131,11 +131,11 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
+/*carrossel interativo*/
 .carousel-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* centraliza horizontalmente */
+  justify-content: center; 
   gap: 10px;
   overflow: hidden;
   position: relative;
@@ -181,7 +181,7 @@ footer {
 .carousel-btn:hover {
   background: var(--verde-menta);
 }
-
+/* Estilos para os idiomas com efeito hover */
 .idiomas-grid {
   display: flex;
   gap: 20px;
@@ -204,7 +204,7 @@ footer {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
-
+/*cursor de coração*/
 .hobby-card:hover,
 .idiomas-grid div:hover {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' height='32' width='32'><text y='50%' x='50%' dominant-baseline='middle' text-anchor='middle' font-size='20'>❤️</text></svg>"), auto;
